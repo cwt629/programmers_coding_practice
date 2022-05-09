@@ -67,7 +67,7 @@ function solution(new_id) {
     return answer;
 }
 
-// 알파벳 소문자, 숫자, 빼기, 밑줄, 마침표가 아니라면 true를 반환하는 함수
+// 알파벳 소문자, 숫자, 빼기, 밑줄, 마침표가 맞다면 true를 반환하는 함수
 function isValidChar(char) {
     return ((char >= 'a' && char <= 'z') || (char >= '0' && char <= '9') ||
         (char === '-') || (char === '_') || (char === '.'));

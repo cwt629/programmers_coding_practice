@@ -3,9 +3,6 @@
 (연습문제: 탐욕법(Greedy))
 */
 
-// 미해결
-
-
 console.log(solution("JEROEN"), solution("JAN"));
 
 // 3rd try: 완전 탐색

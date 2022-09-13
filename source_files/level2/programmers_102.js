@@ -38,7 +38,7 @@ function solution(fees, records) {
             cars[carnumber] += minutesSpent(time, "23:59");
         else cars[carnumber] = minutesSpent(time, "23:59");
     })
-    console.log(cars)
+
     // 딕셔너리의 차량 번호에 대해 정렬하여 배열에 차례대로 넣어준다
     var sortedCars = [];
     Object.keys(cars).sort().forEach((key) => {

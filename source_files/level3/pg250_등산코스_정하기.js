@@ -3,8 +3,7 @@
 (2022 KAKAO TECH INTERNSHIP)
 */
 
-/* 1st try: summit마다 Prim's algorithm 돌리기 - 5실패, 3시간초과*/
-
+/* 1st try: summit마다 Prim's algorithm 돌리기 - 3시간초과*/
 class Edge {
     constructor(from, to, time){
         this.from = from;
@@ -104,6 +103,7 @@ function solution(n, paths, gates, summits) {
     }
     
     // 각 summit에서 시작하며 intensity 갱신
+    summits.sort((a, b) => (a - b));
     for (let summit of summits){
         let visited = Array.from({length: n}, (v, i) => (summit === i + 1));
         let intensity = 0;
